@@ -2,7 +2,7 @@
 import React from "react";
 import img1 from "../assets/Gallery1.png";
 import img2 from "../assets/Gallery2.png";
-import img3 from "../assets/Gallery3.png";
+import img3 from "../assets/gallery3.png";
 import img4 from "../assets/Gallery4.png";
 
 export default function Gallery() {
