@@ -15,13 +15,13 @@ export default function Gallery() {
         <div className="flex items-center gap-4 lg:gap-6 mb-[30px] lg:mb-[60px]">
           <div className="w-[80px] lg:w-[120px] h-[1px] bg-gray-400"></div>
 
-          <h2 className="text-[22px] lg:text-[30px] text-gray-300 font-light tracking-wide">
+          <h2 className="text-[22px] md:text-[26px] lg:text-[30px] text-gray-300 font-light tracking-wide">
             My Gallary
           </h2>
         </div>
 
         {/* Mobile Text */}
-        <p className="text-gray-400 text-[15px] leading-[26px] mb-[30px] lg:hidden">
+        <p className="text-gray-400 text-[15px] md:text-[16px] leading-[26px] mb-[30px] lg:hidden">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc,
           tincidunt sed purus phasellus condimentum sed diam sem. Maecenas
           fermentum ac aliquet felis.
@@ -30,28 +30,30 @@ export default function Gallery() {
         {/* Images */}
         <div
           className="
-          flex lg:grid
+          flex
+          md:grid
           flex-row
+          md:grid-cols-2
           lg:grid-cols-4
-          gap-[20px] lg:gap-[40px]
-          overflow-x-auto lg:overflow-visible
+          gap-[20px] md:gap-[25px] lg:gap-[40px]
+          overflow-x-auto  scrollbar-hide  md:overflow-visible
           my-[30px] lg:my-[50px]
         "
         >
 
-          <div className="min-w-[260px] h-[260px] lg:w-full lg:h-[420px] overflow-hidden">
+          <div className="min-w-[260px] h-[260px] md:min-w-0 md:h-[320px] lg:h-[420px] overflow-hidden">
             <img src={img1} alt="" className="w-full h-full object-cover" />
           </div>
 
-          <div className="min-w-[260px] h-[260px] lg:w-full lg:h-[420px] overflow-hidden">
+          <div className="min-w-[260px] h-[260px] md:min-w-0 md:h-[320px] lg:h-[420px] overflow-hidden">
             <img src={img2} alt="" className="w-full h-full object-cover" />
           </div>
 
-          <div className="min-w-[260px] h-[260px] lg:w-full lg:h-[420px] overflow-hidden">
+          <div className="min-w-[260px] h-[260px] md:min-w-0 md:h-[320px] lg:h-[420px] overflow-hidden">
             <img src={img3} alt="" className="w-full h-full object-cover" />
           </div>
 
-          <div className="min-w-[260px] h-[260px] lg:w-full lg:h-[420px] overflow-hidden">
+          <div className="min-w-[260px] h-[260px] md:min-w-0 md:h-[320px] lg:h-[420px] overflow-hidden">
             <img src={img4} alt="" className="w-full h-full object-cover" />
           </div>
 
@@ -69,3 +71,4 @@ export default function Gallery() {
     </section>
   );
 }
+
