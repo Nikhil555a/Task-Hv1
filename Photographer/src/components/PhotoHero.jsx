@@ -7,14 +7,18 @@ export default function PhotoHero() {
   return (
     <section className="bg-[#0c0c0c] min-h-screen flex items-center justify-center text-white relative overflow-hidden">
 
-      <div className="w-full lg:w-[1300px] flex flex-col lg:flex-row items-center justify-between relative px-8">
+      <div className="w-full xl:w-[1300px] flex flex-col xl:flex-row items-center justify-between relative px-8">
 
         {/* LEFT IMAGE */}
-        <div className="
-        w-full h-[240px] mb-6 mt-[10px] lg:mt-[0px]
-        lg:absolute lg:bottom-[-140px] lg:left-[-60px] lg:w-[780px] lg:h-[500px]
-        z-10
-        ">
+        <div
+          className="
+          w-full md:max-w-[1100px] h-[240px] mb-6 mt-[10px]
+
+          xl:absolute xl:bottom-[-140px] xl:left-[-60px] xl:w-[780px] xl:h-[500px]
+
+          z-10
+        "
+        >
           <img
             src={img2}
             alt=""
@@ -22,12 +26,16 @@ export default function PhotoHero() {
           />
         </div>
 
-        {/* CENTER IMAGE (Hidden on Mobile) */}
-        <div className="
-        hidden lg:block
-        lg:absolute lg:left-[330px] lg:my-[40px] lg:w-[480px] lg:h-[650px]
-        z-20
-        ">
+        {/* CENTER IMAGE (Desktop only) */}
+        <div
+          className="
+          hidden xl:block
+
+          xl:absolute xl:left-[330px] xl:my-[40px] xl:w-[480px] xl:h-[650px]
+
+          z-20
+        "
+        >
           <img
             src={img1}
             alt=""
@@ -36,40 +44,43 @@ export default function PhotoHero() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="
-        w-full text-center
-        lg:ml-[850px] lg:max-w-[500px] lg:text-left
-        ">
+        <div
+          className="
+          w-full md:max-w-[1100px] text-center
 
-          <p className="tracking-[4px] lg:tracking-[6px] text-white text-[16px] lg:text-[20px] mb-4 lg:mb-6">
+          xl:ml-[850px] xl:max-w-[500px] xl:text-left
+        "
+        >
+
+          <p className="tracking-[4px] xl:tracking-[6px] text-white text-[16px] xl:text-[20px] mb-4 xl:mb-6">
             ALEX VOLKAV
           </p>
 
-          <h1 className="text-[24px] lg:text-[30px] leading-[36px] lg:leading-[56px] font-semibold mb-4 lg:mb-6">
+          <h1 className="text-[24px] xl:text-[30px] leading-[36px] xl:leading-[56px] font-semibold mb-4 xl:mb-6">
             Lorem ipsum dolor sit amet,
             consectetur adipiscing elit.
           </h1>
 
-          <div className="w-full h-[2px] lg:h-[3px] bg-white mb-6 lg:mb-8"></div>
+          <div className="w-full h-[2px] xl:h-[3px] bg-white mb-6 xl:mb-8"></div>
 
-          <p className="text-gray-400 text-[14px] lg:text-[16px] leading-6 lg:leading-7 mb-4 lg:mb-6">
+          <p className="text-gray-400 text-[14px] xl:text-[16px] leading-6 xl:leading-7 mb-4 xl:mb-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Nunc, tincidunt sed purus phasellus condimentum sed diam sem.
             Maecenas fermentum ac aliquet felis.
           </p>
 
-          <p className="text-gray-400 text-[14px] lg:text-[16px] leading-6 lg:leading-7 mb-8 lg:mb-10">
+          <p className="text-gray-400 text-[14px] xl:text-[16px] leading-6 xl:leading-7 mb-8 xl:mb-10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Nunc, tincidunt sed purus phasellus Lorem ipsum dolor sit amet.
           </p>
 
-          <div className="flex gap-4 lg:gap-5 justify-center lg:justify-center">
+          <div className="flex gap-4 xl:gap-5 justify-center xl:justify-center">
 
-            <button className="px-6 lg:px-10 py-2 bg-gray-700 rounded-full font-semibold text-[16px] lg:text-[20px] hover:bg-gray-600">
+            <button className="px-6 xl:px-10 py-2 bg-gray-700 rounded-full font-semibold text-[16px] xl:text-[20px] hover:bg-gray-600">
               About me
             </button>
 
-            <button className="px-6 lg:px-10 py-2 bg-gray-700 rounded-full font-semibold text-[16px] lg:text-[20px] hover:bg-gray-600">
+            <button className="px-6 xl:px-10 py-2 bg-gray-700 rounded-full font-semibold text-[16px] xl:text-[20px] hover:bg-gray-600">
               Contact me
             </button>
 
@@ -82,3 +93,4 @@ export default function PhotoHero() {
     </section>
   );
 }
+
